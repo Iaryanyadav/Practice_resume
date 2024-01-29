@@ -4,23 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <style>
+        *{
+            background-color: beige;
+            border: 20px;
+            border-color: black;
+        }
+        
+        img{
+            height: 300px;
+            width: 300px;
+            border-radius: 50pc;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: blueviolet;
+            font-family: cursive;
+        }
+        
+        h2{
+            text-align: left;
+            color: darkviolet;
+            font-size: 40px;
+            font-weight: 300;
+            font-family: monospace;
+        }
+        
+        .summary{
+            font-size: 28px;
+            font-family: sans-serif;
+        }
+        
+        table,thead,tbody{
+            font-size: 25px;
+            padding-top: 2px;
+            padding-bottom: 8px;
+            padding-left: 2px;
+            padding-right: 2px;
+            text-align: center;
+            border: 4px;
+            border-color: aquamarine;
+            border-style: solid;
+            border-radius: 8px;
+        }
+        th,td{
+          padding-top: 4px;
+            padding-bottom: 8px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            border: 4px;
+            border-color: aquamarine;
+            border-style: solid;
+            border-radius: 8px;
+        }
+        
+        #li_exp,#exp_p{
+            font-size: 24px;
+        }
+        #exp{
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        
+        .skill{
+            font-size: 20px;
+            font-family: sans-serif;
+            
+        }
+        .lang{
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Charle 420</h1>
-    <img src="myphoto.jpg" alt="MyPhoto" height="200"/>
+    <div>
+        <h1>Aryan</h1>
+        <img src="myphoto.jpg" alt="MyPhoto" />
+    </div>
     
     <h2>Summary</h2>
-    <p>I am a hardworking and dedicated individual with experience in customer service and administration.</p>
+    <p class="summary">I am a hardworking and dedicated individual with experience in customer service and administration.</p>
     <hr />
     
     <h2>Eduation</h2>
-    <table
-           Border = "2"
-           cellspacing = "4">
+    <table>
         <thead>
-            <td>Degree</td>
-            <td>School/Collage</td>
-            <td>Passing Year</td>
+            <th>Degree</th>
+            <th>School/Collage</th>
+            <th>Passing Year</th>
         </thead>
         <tbody>
         <tr>
@@ -43,10 +117,10 @@
     <hr />
     
     <h2>Experience</h2>
-    <ul>
-        <li><b>INTERN</b>, <i>08/2023-Current</i></li>
-            <p><b>Google</b>,Gurugram,India</p>
-            <ul>
+    <ul >
+        <li id="li_exp"><b>INTERN</b>, <i>08/2023-Current</i></li>
+            <p id="exp_p"><b>Google</b>,Gurugram,India</p>
+            <ul id="exp">
                 <li>Researched industry trends and competitor strategies to inform decision making.</li>
                 <li>Tested software applications prior to release and identified issues requiring resolution.</li>
                 <li>Prepared invoices, purchase orders, and expense reports according to company policies.</li>
@@ -55,9 +129,9 @@
                 <li>Maintained accurate records of all activities performed throughout internship period.</li>
             </ul>
     
-        <li><b>INTERN</b>,<i>01/2023-03/2023</i></li>
-            <p><b>Amazon</b>,Gurugram,Inida</p>
-            <ul>
+        <li id="li_exp"><b>INTERN</b>,<i>01/2023-03/2023</i></li>
+            <p id="exp_p"><b>Amazon</b>,Gurugram,Inida</p>
+            <ul id="exp">
                 <li>Developed web applications using HTML, CSS and JavaScript.</li>
                 <li>Collaborated with other developers on code reviews, bug fixes, and feature development.</li>
                 <li>Deployed web applications to production environments using various cloud services such as AWS and Azure.</li>
@@ -70,21 +144,21 @@
     <hr />
     
     <h2>Skills</h2>
-    <ul>
+    <ul class="skill">
         <li>Presentations</li>
         <li>Problem Solving</li>
         <li>Analytics</li>
         <li>Team work and Collabortion</li>
         <li>Clerical Support</li>
     </ul>
-    <hr />
+    <hr/>
     
-    <h2>Awards and Certificate</h2>
+     <h2>Awards and Certificate</h2>
     <a href="certificate.html"><button>Certificate</button></a>
-
     <hr />
+
     <h2>Language Known</h2>
-    <ul>
+    <ul class="lang">
         <li>C++</li>
         <li>Python</li>
         <li>C</li>
